@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CakeShop 后台管理</title>
+    <link rel="stylesheet" href="/front/common-fix.css?v=19">
+    <style>
+        body { background: linear-gradient(180deg, #fbfaf7 0, #f7f8f6 420px, #fff 100%); }
+        .admin-shell { max-width: 1280px; margin: 0 auto; padding: 34px 18px 60px; }
+        .admin-title {
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            gap: 18px;
+            margin-bottom: 24px;
+            padding: 26px;
+            border: 1px solid var(--line-soft);
+            border-radius: var(--radius);
+            background: linear-gradient(135deg, #fff 0%, #fff8ef 52%, #f1fbfa 100%);
+            box-shadow: var(--shadow-sm);
+        }
+        .tabs {
+            display:flex;
+            flex-wrap: wrap;
+            gap:10px;
+            margin-bottom: 18px;
+            padding: 10px;
+            border: 1px solid var(--line-soft);
+            border-radius: var(--radius);
+            background: #fff;
+            box-shadow: var(--shadow-sm);
+        }
+        .admin-panel { padding:24px; }
+        .inline-form { display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; margin-bottom:20px; }
+        .inline-form .wide { grid-column: span 2; }
+        .inline-form button { width: 120px; }
+        .table button { margin-right: 6px; }
+        .stats-grid { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:14px; margin:18px 0 26px; }
+        .stat-card {
+            padding:20px;
+            border:1px solid var(--line-soft);
+            border-radius: var(--radius);
+            background:#fff;
+            box-shadow: 0 6px 18px rgba(31, 35, 40, 0.05);
+        }
+        .stat-card span { display:block; color:var(--muted); margin-bottom:8px; }
+        .stat-card strong { font-size:28px; color:var(--brand); }
+        .stats-hero {
+            display: grid;
+            grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+            gap: 16px;
+            margin: 16px 0 22px;
+        }
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+            margin: 18px 0 28px;
+        }
+        .chart-card,
+        .insight-card {
+            position: relative;
+            min-height: 300px;
+            padding: 20px;
+            border: 1px solid var(--line-soft);
+            border-radius: var(--radius);
+            background: rgba(255,255,255,.96);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+        .chart-card::before,
+        .insight-card::before {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), var(--teal));
+        }
+        .chart-card h3,
+        .insight-card h3 {
+            margin: 4px 0 6px;
+            color: var(--ink);
+        }
+        .chart-card p,
+        .insight-card p {
+            margin: 0 0 14px;
+            color: var(--muted);
+        }
+        .chart-card canvas {
+            width: 100%;
+            height: 220px;
+            display: block;
+        }
+        .insight-list {
+            display: grid;
+            gap: 12px;
+            margin-top: 14px;
+        }
+        .insight-list div {
+            padding: 14px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #fff7ec, #f3fbfa);
+            border: 1px solid var(--line-soft);
+        }
+        .insight-list strong {
+            display: block;
+            font-size: 22px;
+            color: var(--brand);
+        }
+        .admin-panel .reveal-up {
+            opacity: 1;
+            transform: none;
+        }
+        .stats-section-title {
+            margin: 28px 0 12px;
+        }
+        @media (max-width: 900px) {
+            .admin-title { display:block; }
+            .admin-title .btn { margin-top: 14px; }
+            .inline-form,
+            .stats-grid,
+            .stats-hero,
+            .chart-grid { grid-template-columns:1fr; }
+            .inline-form .wide { grid-column: auto; }
+        }
+    </style>
+</head>
+<body>
+<div class="admin-shell">
+    <div class="admin-title">
+        <h1>CakeShop 后台管理</h1>
+        <a class="btn gray" href="/front/index.html">返回前台</a>
+    </div>
+    <div class="tabs">
+        <button class="btn primary" data-tab="goods">商品管理</button>
+        <button class="btn gray" data-tab="types">分类管理</button>
+        <button class="btn gray" data-tab="orders">订单管理</button>
+        <button class="btn gray" data-tab="users">用户管理</button>
+        <button class="btn gray" data-tab="stats">经营统计</button>
+    </div>
+    <div id="admin-panel" class="admin-panel"></div>
+</div>
+<script src="/admin/admin.js?v=20"></script>
+</body>
+</html>

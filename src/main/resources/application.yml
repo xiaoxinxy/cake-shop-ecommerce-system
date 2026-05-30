@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cake-shop-ecommerce-system
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/cakeshop1?serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  thymeleaf:
+    cache: false
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+assistant:
+  ollama:
+    base-url: http://localhost:11434
+    model: qwen2:7b
+    timeout-seconds: 90
+
+payment:
+  sandbox:
+    enabled: true

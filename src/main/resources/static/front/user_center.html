@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人中心 - CakeShop</title>
+    <link rel="stylesheet" href="/front/common-fix.css?v=19">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="page">
+    <div class="profile-layout">
+        <section>
+            <h1 class="section-title">个人中心</h1>
+            <form id="profile-form" class="form-box profile-form">
+                <label>用户名</label>
+                <input class="form-control" name="username" disabled>
+                <label>邮箱</label>
+                <input class="form-control" name="email">
+                <label>收货人</label>
+                <input class="form-control" name="name">
+                <label>收货电话</label>
+                <input class="form-control" name="phone">
+                <label>收货地址</label>
+                <input class="form-control" name="address">
+                <button class="btn success" type="submit">保存资料</button>
+            </form>
+        </section>
+        <section>
+            <h2 class="section-title">账号安全</h2>
+            <form id="password-form" class="form-box profile-form">
+                <label>原密码</label>
+                <input class="form-control" type="password" name="oldPassword" required>
+                <label>新密码</label>
+                <input class="form-control" type="password" name="newPassword" required>
+                <button class="btn primary" type="submit">修改密码</button>
+            </form>
+            <p><a class="btn gray" href="/front/order_list.html">查看我的订单</a></p>
+        </section>
+    </div>
+</main>
+<div id="site-footer"></div>
+<script src="/front/common-fix.js?v=19"></script>
+</body>
+</html>
+
+
+
+
+
+
+

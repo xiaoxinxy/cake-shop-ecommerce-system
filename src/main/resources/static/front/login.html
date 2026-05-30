@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录 - CakeShop</title>
+    <link rel="stylesheet" href="/front/common-fix.css?v=19">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="page">
+    <form id="login-form" class="form-box">
+        <h1 class="section-title">用户登录</h1>
+        <label>用户名</label>
+        <input class="form-control" name="username" required>
+        <label>密码</label>
+        <input class="form-control" type="password" name="password" required>
+        <label>验证码</label>
+        <div class="captcha-row">
+            <input id="captcha-input" class="form-control" placeholder="请输入验证码" required>
+            <div id="captcha-code" class="captcha-code" title="点击更换验证码"></div>
+            <button id="captcha-refresh" class="btn gray" type="button">换一张</button>
+        </div>
+        <button class="btn primary" type="submit">登录</button>
+    </form>
+</main>
+<div id="site-footer"></div>
+<script src="/front/common-fix.js?v=19"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

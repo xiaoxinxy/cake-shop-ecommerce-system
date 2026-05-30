@@ -1,0 +1,342 @@
+
+<!-- saved from url=(0049)http://localhost:8081/cakeShop_war_exploded/index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link type="text/css" rel="stylesheet" href="./index_files/bootstrap.css">
+  <link type="text/css" rel="stylesheet" href="./index_files/style.css">
+  <script type="text/javascript" src="./index_files/jquery.min.js.下载"></script>
+  <script type="text/javascript" src="./index_files/bootstrap.min.js.下载"></script>
+  <script type="text/javascript" src="./index_files/layer.js.下载"></script><link rel="stylesheet" href="./index_files/layer.css" id="layuicss-layer">
+  <script type="text/javascript" src="./index_files/cart.js.下载"></script>
+  </head>
+  <body>
+  <!--header -->
+    
+
+
+
+
+<!--header-->
+<div class="header">
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h1 class="navbar-brand"><a href="http://localhost:8080/index"></a></h1>
+            </div>
+            <!--navbar-header-->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="http://localhost:8080/index" class="active">首页</a></li>
+                    <li class="dropdown open">
+                        <a href="http://localhost:8080/index#" class="dropdown-toggle " data-toggle="dropdown">商品分类<b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-2">
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4>商品分类</h4>
+                                        <ul class="multi-column-dropdown">
+                                            <li><a class="list" href="http://localhost:8080/goods_list">全部系列</a></li>
+                                            
+                                               <li><a class="list" href="http://localhost:8081/cakeShop_war_exploded/goods_list?typeid=1">冰淇淋系列</a></li>
+                                            
+                                               <li><a class="list" href="http://localhost:8081/cakeShop_war_exploded/goods_list?typeid=2">零食系列</a></li>
+                                            
+                                               <li><a class="list" href="http://localhost:8081/cakeShop_war_exploded/goods_list?typeid=3">儿童系列</a></li>
+                                            
+                                               <li><a class="list" href="http://localhost:8081/cakeShop_war_exploded/goods_list?typeid=4">法式系列</a></li>
+                                            
+                                               <li><a class="list" href="http://localhost:8081/cakeShop_war_exploded/goods_list?typeid=5">经典系列</a></li>
+                                            
+                                               <li><a class="list" href="http://localhost:8081/cakeShop_war_exploded/goods_list?typeid=8">节日系列</a></li>
+                                            
+                                               <li><a class="list" href="http://localhost:8081/cakeShop_war_exploded/goods_list?typeid=11">买不起系列</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="http://localhost:8080/goodsrecommend_list?type=2">热销</a></li>
+                    <li><a href="http://localhost:8080/goodsrecommend_list?type=3">新品</a></li>
+
+
+                    <li><a href="http://localhost:8080/user_register.jsp">注册</a></li>
+                    <li><a href="http://localhost:8080/user_login.jsp">登录</a></li>
+
+
+
+
+                </ul>
+                <!--/.navbar-collapse-->
+            </div>
+            <!--//navbar-header-->
+        </nav>
+        <div class="header-info">
+            <div class="header-right search-box">
+                <a href="javascript:;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                <div class="search">
+                    <form class="navbar-form" action="http://localhost:8080/goods_search">
+                        <input type="text" class="form-control" name="keyword">
+                        <button type="submit" class="btn btn-default " aria-label="Left Align">搜索</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="header-right cart">
+                <a href="http://localhost:8080/goods_cart.jsp">
+                    <span class="glyphicon glyphicon-shopping-cart " aria-hidden="true"><span class="card_num">1</span></span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<!--//header-->
+
+
+  <!--banner-->
+
+  <!--banner 条幅-->
+  <div class="banner">
+    <div class="container">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators" id="olnum">
+           
+             <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+           
+             <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+           
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <!--轮播图-->
+        <div class="carousel-inner" role="listbox" id="lunbotu" style="width: 100%; height: 432px;">
+          <!--遍历条幅-->
+          
+            <div class="item">
+              <h2 class="hdng"><a href="http://localhost:8081/cakeShop_war_exploded/goods_detail?id=14">意大利芝士饼干</a><span></span></h2>
+              <p>今日精选推荐</p>
+              <a class="banner_a" href="javascript:;" onclick="buy(14)">立刻购买</a>
+              <div class="banner-text">
+                <a href="http://localhost:8081/cakeShop_war_exploded/goods_detail?id=14">
+                  <img src="./index_files/14-1.jpg" alt="意大利芝士饼干" width="350" height="350">
+                </a>
+              </div>
+            </div>
+          
+            <div class="item active">
+              <h2 class="hdng"><a href="http://localhost:8081/cakeShop_war_exploded/goods_detail?id=16">草莓冰淇淋</a><span></span></h2>
+              <p>今日精选推荐</p>
+              <a class="banner_a" href="javascript:;" onclick="buy(16)">立刻购买</a>
+              <div class="banner-text">
+                <a href="http://localhost:8081/cakeShop_war_exploded/goods_detail?id=16">
+                  <img src="./index_files/9-1.jpg" alt="草莓冰淇淋" width="350" height="350">
+                </a>
+              </div>
+            </div>
+          
+
+        </div>
+        <!--end 轮播图-->
+        <!-- Controls -->
+         <a style="background-image: none;position: relative;left: 5%;top:-100px" class="left carousel-control" href="http://localhost:8081/cakeShop_war_exploded/index#carousel-example-generic" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </a>
+          <a style="background-image: none;position: relative;left: 95%;top:-100px" class="right carousel-control" href="http://localhost:8081/cakeShop_war_exploded/index#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </a>
+      </div>
+    </div>
+  </div>
+  <!--end banner-->
+  <!--//banner-->
+  <div class="subscribe2"></div>
+  <!--热销推荐-->
+  <!--gallery-->
+  <div class="gallery">
+    <div class="container">
+      <div class="alert alert-danger">热销推荐</div>
+      <div class="gallery-grids">
+        
+        <div class="col-md-4 gallery-grid glry-two">
+          <a href="http://localhost:8080/goods_detail?id=10">
+            <img src="./index_files/10-1.jpg" class="img-responsive" alt="玫瑰舒芙蕾" width="350" height="350">
+          </a>
+          <div class="gallery-info galrr-info-two">
+            <p>
+              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+              <a href="http://localhost:8080/goods_detail?id=10">查看详情</a>
+            </p>
+            <a class="shop" href="javascript:;" onclick="buy(10)">立刻购买</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="galy-info">
+            <p>$儿童系列 &gt; 玫瑰舒芙蕾</p>
+            <div class="galry">
+              <div class="prices">
+                <h5 class="item_price">¥ 28.0</h5>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 gallery-grid glry-two">
+          <a href="http://localhost:8080/goods_detail?id=12">
+            <img src="./index_files/12-1.jpg" class="img-responsive" alt="青森芝士条" width="350" height="350">
+          </a>
+          <div class="gallery-info galrr-info-two">
+            <p>
+              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+              <a href="http://localhost:8080/goods_detail?id=12">查看详情</a>
+            </p>
+            <a class="shop" href="javascript:;" onclick="buy(12)">立刻购买</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="galy-info">
+            <p>$零食系列 &gt; 青森芝士条</p>
+            <div class="galry">
+              <div class="prices">
+                <h5 class="item_price">¥ 36.0</h5>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 gallery-grid glry-two">
+          <a href="http://localhost:8080/goods_detail?id=13">
+            <img src="./index_files/13-1.jpg" class="img-responsive" alt="蜂蜜蛋糕" width="350" height="350">
+          </a>
+          <div class="gallery-info galrr-info-two">
+            <p>
+              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+              <a href="http://localhost:8080/goods_detail?id=13">查看详情</a>
+            </p>
+            <a class="shop" href="javascript:;" onclick="buy(13)">立刻购买</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="galy-info">
+            <p>$零食系列 &gt; 蜂蜜蛋糕</p>
+            <div class="galry">
+              <div class="prices">
+                <h5 class="item_price">¥ 36.0</h5>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+      <!--end 热销推荐-->
+      <!--新品推荐-->
+      <div class="clearfix"></div>
+      <div class="alert alert-info">新品推荐</div>
+      <div class="gallery-grids">
+        
+
+        <div class="col-md-3 gallery-grid ">
+          <a href="http://localhost:8080/goods_detail?id=10">
+            <img src="./index_files/10-1.jpg" class="img-responsive" alt="玫瑰舒芙蕾">
+          </a>
+          <div class="gallery-info">
+            <p>
+              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+              <a href="http://localhost:8080/goods_detail?id=10">查看详情</a>
+            </p>
+            <a class="shop" href="javascript:;" onclick="buy(10)">立刻购买</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="galy-info">
+            <p>儿童系列&gt; 玫瑰舒芙蕾</p>
+            <div class="galry">
+              <div class="prices">
+                <h5 class="item_price">¥ 28.0</h5>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-3 gallery-grid ">
+          <a href="http://localhost:8080/goods_detail?id=12">
+            <img src="./index_files/12-1.jpg" class="img-responsive" alt="青森芝士条">
+          </a>
+          <div class="gallery-info">
+            <p>
+              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+              <a href="http://localhost:8080/goods_detail?id=12">查看详情</a>
+            </p>
+            <a class="shop" href="javascript:;" onclick="buy(12)">立刻购买</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="galy-info">
+            <p>零食系列&gt; 青森芝士条</p>
+            <div class="galry">
+              <div class="prices">
+                <h5 class="item_price">¥ 36.0</h5>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-md-3 gallery-grid ">
+          <a href="http://localhost:8080/goods_detail?id=13">
+            <img src="./index_files/13-1.jpg" class="img-responsive" alt="蜂蜜蛋糕">
+          </a>
+          <div class="gallery-info">
+            <p>
+              <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+              <a href="http://localhost:8080/goods_detail?id=13">查看详情</a>
+            </p>
+            <a class="shop" href="javascript:;" onclick="buy(13)">立刻购买</a>
+            <div class="clearfix"></div>
+          </div>
+          <div class="galy-info">
+            <p>零食系列&gt; 蜂蜜蛋糕</p>
+            <div class="galry">
+              <div class="prices">
+                <h5 class="item_price">¥ 36.0</h5>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+      <!--end 新品推荐-->
+    </div>
+  </div>
+  <div class="subscribe"></div>
+  
+
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="text-center">
+            <p>河北师范大学汇华学院 张三 © All rights Reseverd</p>
+        </div>
+    </div>
+</div>
+<!--//footer-->
+
+  
+
+</body></html>

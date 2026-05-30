@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>口味测评 - CakeShop</title>
+    <link rel="stylesheet" href="/front/common-fix.css?v=19">
+</head>
+<body>
+<div id="site-header"></div>
+<main class="page taste-page">
+    <section class="taste-hero reveal-up">
+        <div>
+            <span>新功能</span>
+            <h1>口味测评推荐</h1>
+            <p>选择场景、偏好和预算，系统会从商城商品里给出更贴近需求的推荐。</p>
+        </div>
+        <form id="taste-form" class="taste-form">
+            <label>购买场景</label>
+            <select class="form-control" name="scene">
+                <option value="party">聚会分享</option>
+                <option value="gift">送礼</option>
+                <option value="self">自己吃</option>
+            </select>
+            <label>口味偏好</label>
+            <select class="form-control" name="flavor">
+                <option value="classic">经典奶油</option>
+                <option value="ice">清爽冰淇淋</option>
+                <option value="kids">儿童款</option>
+                <option value="all">都可以</option>
+            </select>
+            <label>预算上限</label>
+            <input class="form-control" name="budget" type="number" min="10" value="80">
+            <button class="btn primary" type="submit">生成推荐</button>
+        </form>
+    </section>
+    <div id="taste-result"></div>
+</main>
+<div id="site-footer"></div>
+<script src="/front/common-fix.js?v=19"></script>
+</body>
+</html>
