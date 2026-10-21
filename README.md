@@ -1,4 +1,4 @@
-# Cake Shop Ecommerce System
+# 蛋糕小铺 · 蛋糕商城系统
 
 Spring Boot + MyBatis-Plus ecommerce system for a cake shop.
 
